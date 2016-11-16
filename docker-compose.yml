@@ -59,7 +59,7 @@ services:
       - /sys:/sys:ro
       - /var/lib/docker/:/var/lib/docker:ro
     expose:
-      - 8080
+      - 9091
     networks:
       - back-tier
   
@@ -70,7 +70,7 @@ services:
     ports:
       - 3000:3000
     volumes:
-      - grafana_data:/var/lib/grafana
+      - grafana_data:/var/lib/grafana_prom
     env_file:
       - config.monitoring
     networks:
