@@ -80,4 +80,3 @@ services:
     - config.monitoring
     networks:
     - back-tier
-    - front-tier
